@@ -34,7 +34,8 @@ const NavBar = () => {
                 .map((document) => ({ ...document.data(), id: document.id }));
 
             setCategorias(categoriasList);
-            console.log(categoriasList);
+
+            //Console de Prueba console.log(categoriasList);
         }
         requestData();
     }, [])

@@ -81,7 +81,7 @@ export const CartProvider = ({ children }) => {
         <CartContext.Provider value={{ addItem, removeItem, clear, isInCart, items, itemsCount }}>
             {children}
 
-            <Snackbar open={snackbar.open} autoHideDuration={3000} onClose={handleClose}>
+            <Snackbar open={snackbar.open} autoHideDuration={1500} onClose={handleClose}>
                 <Alert onClose={handleClose} severity={snackbar.severity} sx={{ width: '100%' }}>
                     {snackbar.text}
                 </Alert>

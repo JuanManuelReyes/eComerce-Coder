@@ -30,6 +30,9 @@ const ItemListContainer = ({ match }) => {
 
             setItems(itemsList);
             setIsLoading(false);
+            
+            //Console de Prueba console.log (itemsList);
+
         }
         requestData();
 
