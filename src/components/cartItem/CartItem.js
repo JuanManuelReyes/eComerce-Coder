@@ -1,5 +1,8 @@
+//Imports
+//Diseño
 import { Avatar, Divider, Grid, IconButton, ListItem, ListItemAvatar, Typography } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
+//Hook para utilizar imagenes del Storage de FireBase
 import { useFirebaseImage } from '../../hooks/useFirebaseImage';
 
 const CartItem = ({ item, onDelete }) => {

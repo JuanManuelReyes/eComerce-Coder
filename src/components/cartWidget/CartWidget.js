@@ -1,7 +1,11 @@
-import { Badge, IconButton } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+//Imports
+//React
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+//Diseño
+import { Badge, IconButton } from '@mui/material';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+//Archivos CartContext
 import { CartContext } from '../../contexts/CartContext';
 
 const CartWidget = () => {

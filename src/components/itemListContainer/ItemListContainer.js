@@ -1,8 +1,13 @@
-
+//Imports
+//FireBase
 import { collection, getDocs, query, where } from '@firebase/firestore';
+//Diseño
 import { Container, LinearProgress } from '@mui/material';
+//React
 import React, { useEffect, useState } from 'react';
+//Se importa la Base de Datos
 import { dataBase } from '../../firebase/firebase';
+//Archivo Item List
 import ItemList from '../itemList/ItemList';
 
 const ItemListContainer = ({ match }) => {

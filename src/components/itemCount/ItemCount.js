@@ -1,14 +1,17 @@
+//Imports
+//Diseño
 import { Button, Paper, Stack, Tooltip } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+//React
 import React, { useState } from 'react';
 
 const ItemCount = ({ stock, initial, onAdd }) => {
 
     const [cantidad, setCantidad] = useState(initial);
 
-    const decress = () => {
+    const restar = () => {
 
         if (cantidad === 1) {
             return;
@@ -17,7 +20,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         setCantidad(cantidad - 1);
     }
 
-    const incress = () => {
+    const sumar = () => {
 
         if (cantidad === stock) {
             return;
@@ -32,7 +35,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
     return (
         <Stack direction="row" spacing={1}>
-            <Button onClick={decress} variant="outlined">
+            <Button onClick={restar} variant="outlined">
                 <RemoveIcon />
             </Button>
 
@@ -40,7 +43,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                 {cantidad}
             </Paper>
 
-            <Button onClick={incress} variant="outlined">
+            <Button onClick={sumar} variant="outlined">
                 <AddIcon />
             </Button>
 
@@ -53,8 +56,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     )
 }
 
-ItemCount.defaultProps = {
-    initial: 1
-}
+ItemCount.defaultProps = {initial: 1}
 
 export default ItemCount;

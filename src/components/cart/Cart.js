@@ -1,6 +1,10 @@
-import { Button, Container, Divider, Grid, List, Typography } from "@mui/material";
+//Imports
+//React
 import { Link } from 'react-router-dom';
 import { useContext, useEffect, useState } from "react";
+//Diseño
+import { Button, Container, Divider, Grid, List, Typography } from "@mui/material";
+//Archivos CartContext y CartItem
 import { CartContext } from "../../contexts/CartContext";
 import CartItem from "../cartItem/CartItem";
 

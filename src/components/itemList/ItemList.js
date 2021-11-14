@@ -1,4 +1,7 @@
+//Imports
+//Diseño
 import { Grid, Typography } from "@mui/material";
+//Archivo Item
 import Item from "../item/Item";
 
 const ItemList = ({ items }) => {

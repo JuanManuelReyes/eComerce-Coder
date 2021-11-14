@@ -1,6 +1,10 @@
+//Imports
+//React
 import React from 'react';
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material"
 import { useHistory } from 'react-router-dom';
+//Diseño
+import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material"
+//Hook para utilizar imagenes del Storage de FireBase
 import { useFirebaseImage } from '../../hooks/useFirebaseImage';
 
 const Item = ({ item }) => {
@@ -32,7 +36,7 @@ const Item = ({ item }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button onClick={navigateToItem} size="small" sx={{ marginLeft: 'auto' }}>Ver Mas</Button>
+                <Button onClick={navigateToItem} size="large" sx={{ marginLeft: 'auto' }}>Ver Mas</Button>
             </CardActions>
         </Card>
     );

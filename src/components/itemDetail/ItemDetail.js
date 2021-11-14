@@ -1,9 +1,14 @@
+//Imports
+//Diseño
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+//React
 import { useState, useContext } from "react";
 import { Link } from 'react-router-dom';
+//Archivos ItemCount y CartCotnext
 import ItemCount from "../itemCount/ItemCount";
 import { CartContext } from '../../contexts/CartContext';
+//Hook para utilizar imagenes del Storage de FireBase
 import { useFirebaseImage } from "../../hooks/useFirebaseImage";
 
 const ButtonTerminar = () => <Button component={Link} to="/cart" variant="contained" color="primary">Finalizar compra</Button>;

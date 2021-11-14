@@ -1,4 +1,7 @@
+//Imports
+//Diseño 
 import { Alert, Snackbar } from "@mui/material";
+//React
 import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
